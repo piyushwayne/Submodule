@@ -8,6 +8,15 @@
 
         double multiply (double a, double b) => a * b;
 
-        double divide (double a, double b) => a/b;
+        double divide (double a, double b) {
+            try
+            {
+                return a/b;
+            }
+            catch (System.Exception ex)
+            {
+                 throw ex;
+            }
+        }
     }
 }
